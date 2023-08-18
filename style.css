@@ -20,13 +20,15 @@ body {
 .container {
   width: 311px;
   margin-inline: auto;
-  border-radius: 5px;
   box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .primary-info {
   padding: 1.5rem;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .primary-info > h1 {
@@ -148,6 +150,12 @@ body {
 @media (min-width: 650px) {
   .container {
     width: 635px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .primary-info {
+    padding: 2.5rem;
   }
 
   .primary-info > h1 {
@@ -168,10 +176,12 @@ body {
 
   .subscription-info {
     width: 50%;
+    padding: 2.5rem;
   }
 
   .whyus-info {
     width: 50%;
+    padding: 2.5rem;
   }
 }
 
