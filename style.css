@@ -1,0 +1,194 @@
+/* CSS Reset */
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #e6eff5;
+}
+
+/* Mobile Layout */
+
+.container {
+  width: 311px;
+  margin-inline: auto;
+  border-radius: 5px;
+  box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+}
+
+.primary-info {
+  padding: 1.5rem;
+}
+
+.primary-info > h1 {
+  font-size: 1.25rem;
+  font-weight: 700px;
+  color: #2ab3b1;
+  margin-bottom: 1.5rem;
+}
+
+.primary-info > h2 {
+  font-size: 0.9375rem;
+  line-height: 133.333%;
+  letter-spacing: -0.187px;
+  font-weight: 700;
+  color: #c0df33;
+  margin-bottom: 1rem;
+}
+
+.primary-info > p {
+  font-size: 0.875rem;
+  line-height: 185.714%;
+  letter-spacing: -0.175px;
+  color: #9aa7be;
+  margin-bottom: 1rem;
+}
+
+.secondary-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription-info {
+  padding: 1.5rem;
+  background-color: #2ab3b1;
+}
+
+.subscription-info > h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.225px;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.subscription-info .price {
+  display: flex;
+  align-items: center;
+}
+
+.subscription-info .amount {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  color: #fff;
+  margin-right: 0.6875rem;
+}
+
+.subscription-info .text-per-month {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.subscription-info > p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 162.5%;
+  letter-spacing: -0.2px;
+  color: #fff;
+  margin-bottom: 1.625rem;
+}
+
+.subscription-info > a {
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+  background-color: #c0df33;
+  text-align: center;
+  color: #fff;
+  opacity: 1;
+  border-radius: 5px;
+  padding: 0.875rem 0;
+
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.subscription-info > a:hover {
+  background-color: #cfe765;
+}
+
+.whyus-info {
+  opacity: 0.75;
+  background-color: #2ab3b1;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.whyus-info > h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.225px;
+  margin-bottom: 1.125rem;
+}
+
+.whyus-info > p {
+  opacity: 0.75;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 142%;
+  letter-spacing: -0.175px;
+}
+
+/* Desktop view */
+
+@media (min-width: 650px) {
+  .container {
+    width: 635px;
+  }
+
+  .primary-info > h1 {
+    font-size: 24px;
+  }
+
+  .primary-info > h2 {
+    font-size: 18px;
+  }
+
+  .primary-info > p {
+    font-size: 16px;
+  }
+
+  .secondary-info {
+    flex-direction: row;
+  }
+
+  .subscription-info {
+    width: 50%;
+  }
+
+  .whyus-info {
+    width: 50%;
+  }
+}
+
+/* Animation */
+
+.container {
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: initial;
+    opacity: 1;
+  }
+}
