@@ -26,6 +26,7 @@ body {
 
 .primary-info {
   padding: 1.5rem;
+  background-color: #fff;
 }
 
 .primary-info > h1 {
