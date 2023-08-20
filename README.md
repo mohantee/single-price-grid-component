@@ -46,7 +46,7 @@ Users should be able to:
 
 - Not to think too much about creating a mini design system for projects like this where the design spec isn't available.
 
-Other than that this project was not easy.
+Other than that this project was easy.
 
 ### Useful resources
 
